@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <header class="header clearfix">
+        <nav>
+          
+        </nav>
+        <h3 class="text-muted">Bookmarker</h3>
+      </header>
+
+      
+
+    <div class="jumbotron">
+        <h2>Bookmark Your Favorite Sites</h2>
+        <form id="myForm">
+        <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+        </div>
+        <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="Website Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>        
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-12">
+        <div id="bookmarksResults"></div>
+        </div>
+    </div>
+
+      
+
+      <footer class="footer">
+        <p>&copy; Bookmarker 2017</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>    
+    <script src="js/main.js"></script>
+  </body>
+</html>
